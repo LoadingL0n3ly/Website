@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap');
+@import-normalize;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+  .text-gradient {
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@layer components {
+  .maintext {
+    @apply content-center select-none font-extrabold text-transparent sm:text-8xl text-4xl flex justify-center pt-72 pb-16 text-mt font-noto
+  }
+  .links-icon {
+    @apply h-16 w-16 mt-2 mb-2 ml-3 mr-3 sm:ml-6 sm:mr-6 text-5xl 
+    items-center flex justify-center hover:rounded-xl rounded-3xl
+    transition-all duration-300 ease-linear cursor-pointer hover:text-white;
+  }
+  .twitter-icon {
+    @apply 	hover:bg-gradient-to-r from-twt via-twtl to-twt dark:hover:bg-twt text-twt
+  }
+  .discord-icon {
+    @apply 	hover:bg-gradient-to-r from-blurple via-blurplel to-blurple dark:hover:bg-blurple text-blurple
+  }
+  .roblox-icon {
+    @apply hover:bg-gradient-to-l from-rblx via-rblxl to-rblx dark:hover:bg-rblx text-rblxl
+  }
+  .roblos-icon {
+    @apply hover:text-rblss hover:bg-red-600  dark:hover:bg-red-600 text-red-500
+  }
+  .spinner {
+    @apply content-center justify-center text-mt
+  }
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-500 dark:bg-green-400;
+}
