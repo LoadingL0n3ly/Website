@@ -7,7 +7,7 @@ class Contact extends Component {
 	render() { 
 		return (
 			// <Redirect to={`${getHomePermalink()}#contact`}/>
-			<Redirect to="https://fedorporttest.netlify.app#contact"/>
+			<Redirect to="https://l0n3ly.com#contact"/>
 		);
 	}
 }

@@ -60,9 +60,9 @@ function Hamburger() {
 							<Ham rounded color="rgb(87 29 29)" toggled={closeModal} toggle={closeModal} />  
 						</div>
 						<div className="flex flex-col gap-y-10 col-span-3 pt-24 text-mainYellow font-bold tracking-wide text-[2rem] justify-center items-center uppercase">
-							<a className="bg-mainRed rounded-2xl py-4 px-6" href={`https://fedorporttest.netlify.app/redir/ect/work`}>work</a>
-							<a className="bg-mainRed rounded-2xl py-4 px-6" href={`https://fedorporttest.netlify.app/redir/ect/aboutme`}>about me</a>
-							<a className="bg-mainRed rounded-2xl py-4 px-6" href={`https://fedorporttest.netlify.app/redir/ect/contact`}>contact</a>
+							<a className="bg-mainRed rounded-2xl py-4 px-6" href={`https://l0n3ly.com/redir/ect/work`}>work</a>
+							<a className="bg-mainRed rounded-2xl py-4 px-6" href={`https://l0n3ly.com/redir/ect/aboutme`}>about me</a>
+							<a className="bg-mainRed rounded-2xl py-4 px-6" href={`https://l0n3ly.com/redir/ect/contact`}>contact</a>
 						</div>
 					</div>
 				</div>
