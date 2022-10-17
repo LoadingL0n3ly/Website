@@ -1,0 +1,47 @@
+---
+import '~/assets/styles/base.css';
+
+import { getHomePermalink } from '~/utils/permalinks';
+import Hamburger from "~/components/core/Hamburger.jsx";
+---
+
+<header class="mx-auto w-full max-w-[90%] pt-4">
+	<div class="mx-auto w-full flex flex-row justify-between py-2 md:py-4 lg:py-0 px-2 md:px-8 border-mainYellow border-b-4 border-dashed">
+		<div class="flex justify-between">
+			<a class="flex items-center text-4xl md:text-[2.5rem] axl:text-5xl font-extrabold tracking-wide" href={getHomePermalink()}>
+				l0n3ly
+			</a>
+		</div>
+		<nav
+			class="items-center w-full hidden lg:flex lg:w-auto h-screen md:h-auto"
+			aria-label="Main navigation"
+			id="menu"
+		>
+			<ul
+				class="flex flex-col pt-8 md:pt-0 md:flex-row md:self-center collapse w-full md:w-auto collapsed uppercase text-mainYellow font-bold tracking-wide text-[2rem] axl:text-[3rem]"
+			>
+				<li>
+					<a
+						class="px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={`${getHomePermalink()}#work`}>Work</a
+					>
+				</li>
+				<li>
+					<a
+						class="px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={`${getHomePermalink()}#about`}>About me
+					</a>
+				</li>
+				<li>
+					<a
+						class="font-black px-4 py-3 flex items-center transition duration-150 ease-in-out"
+						href={`${getHomePermalink()}#contact`}>Contact</a
+					>
+				</li>
+			</ul>
+		</nav>
+		<div class="lg:hidden">
+			<Hamburger client:load/>
+		</div>
+	</div>
+</header>

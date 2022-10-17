@@ -1,0 +1,15 @@
+---
+import { SITE } from '~/config.mjs';
+import Layout from '~/layouts/PageLayout.astro';
+const title = `About Me — ${SITE.name}`;
+import Hero from '~/components/widgets/aboutme/Hero.astro';
+import ImA from '~/components/widgets/aboutme/ImA.jsx';
+---
+
+<Layout {{title}}>
+	<Hero />
+	<span class="items-center"><div class="border-mainYellow border-b-8 border-dashed max-w-[90%] ml-[5%]"> </div></span>
+	<ImA client:load />
+	<span class="items-center"><div class="border-mainYellow border-b-8 border-dashed max-w-[90%] ml-[5%]"> </div></span>
+</Layout>
+

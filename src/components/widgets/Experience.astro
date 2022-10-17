@@ -1,0 +1,14 @@
+---
+import '~/assets/styles/base.css'
+import FirstModal from '~/components/core/FirstModal.jsx'
+import SecondModal from '~/components/core/SecondModal.jsx'
+import ThirdModal from '~/components/core/ThirdModal.jsx'
+---
+
+<section class="pb-12">
+	<div class="mx-auto text-center text-mainRed flex flex-col gap-y-12 xl:grid xl:grid-cols-3 xl:gap-x-16 5xl:gap-x-24 text-6xl 2xl:text-7xl 4xl:text-8xl 5xl:text-9xl md:max-w-[85%] 3xl:max-w-[75%] items-center">
+		<div class='col-start-1 mx-auto'><FirstModal client:load/></div>
+		<div class='col-start-2 mx-auto'><SecondModal client:load/></div>
+		<div class='col-start-3 mx-auto'><ThirdModal client:load/></div>
+	</div>
+</section>

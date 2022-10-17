@@ -1,0 +1,45 @@
+@import url("https://use.typekit.net/liv1hav.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+}
+
+[astro-icon] > * {
+	stroke-width: 1.5;
+}
+
+[astro-icon].icon-bold > * {
+	stroke-width: 2;
+}
+
+[data-aw-toggle-menu] path {
+	@apply transition;
+}
+[data-aw-toggle-menu].expanded g > path:first-child {
+	@apply -rotate-45 translate-y-[15px] translate-x-[-3px];
+}
+
+[data-aw-toggle-menu].expanded g > path:last-child {
+	@apply rotate-45 translate-y-[-8px] translate-x-[14px];
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #731d1d !important;
+}
+
+.swiper-container {
+	width: 100% !important;
+	max-width: 100% !important;
+	max-height: 100vh !important;
+
+	min-height: 0 !important;
+	min-width: 0 !important;
+}
+
+.cardImg {
+	background-position: center center;
+	background-size: cover;	
+}

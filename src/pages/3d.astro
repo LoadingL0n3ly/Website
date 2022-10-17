@@ -1,0 +1,16 @@
+---
+import { SITE } from '~/config.mjs';
+import { getCanonical, getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
+
+import ThreeD from '~/components/widgets/3d.jsx';
+const meta = {
+	title: `3D Projects - ${SITE.name}`,
+	description: SITE.description,
+	canonical: getCanonical(getHomePermalink()),
+};
+
+---
+<Layout {meta}>
+	<ThreeD client:load/>
+</Layout>

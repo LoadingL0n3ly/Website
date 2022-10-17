@@ -1,0 +1,31 @@
+---
+import { SITE } from '~/config.mjs';
+import { getCanonical, getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import Experience from '~/components/widgets/Experience.astro';
+import Cards from '~/components/widgets/Cards.jsx';
+import Cs from '~/components/widgets/Carousel.jsx';
+import About from '~/components/widgets/About.astro';
+import Contact from '~/components/widgets/Contact.jsx';
+const meta = {
+	title: SITE.title,
+	description: SITE.description,
+	canonical: getCanonical(getHomePermalink()),
+};
+
+---
+<!-- https://app.netlify.com/sites/fedorporttest/overview -->
+<Layout {meta}>
+	<Hero />
+	<Experience />
+	<span id="work" class="items-center"><div class="border-mainYellow border-b-8 border-dashed max-w-[90%] ml-[5%]"> </div></span>
+	<Cards client:load />
+	<span class="items-center"><div class="border-mainYellow border-b-8 border-dashed max-w-[90%] ml-[5%]"> </div></span>
+	<Cs client:load/>
+	<span id="about" class="items-center"><div class="border-mainYellow border-b-8 border-dashed max-w-[90%] ml-[5%]"> </div></span>
+	<About />
+	<span id="contact" class="items-center"><div class="border-mainYellow border-b-8 border-dashed max-w-[90%] ml-[5%]"> </div></span>
+	<Contact client:load />
+</Layout>

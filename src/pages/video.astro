@@ -1,0 +1,16 @@
+---
+import { SITE } from '~/config.mjs';
+import { getCanonical, getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
+
+import Video from '~/components/widgets/Video.jsx';
+const meta = {
+	title: `Video Projects - ${SITE.name}`,
+	description: SITE.description,
+	canonical: getCanonical(getHomePermalink()),
+};
+
+---
+<Layout {meta}>
+	<Video client:load/>
+</Layout>

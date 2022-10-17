@@ -1,0 +1,16 @@
+---
+import { SITE } from '~/config.mjs';
+import { getCanonical, getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
+
+import TwoD from '~/components/widgets/2d.jsx';
+const meta = {
+	title: `2D Projects - ${SITE.name}`,
+	description: SITE.description,
+	canonical: getCanonical(getHomePermalink()),
+};
+
+---
+<Layout {meta}>
+	<TwoD client:load/>
+</Layout>
