@@ -12,5 +12,5 @@ export const SITE = {
 };
 
 export const THINGS = {
-	tagline : "Hey! I'm Fedor",
+	tagline : "I want to help you make your vision come to Roblox",
 }

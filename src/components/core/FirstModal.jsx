@@ -66,12 +66,12 @@ class FirstModal extends Component {
 							<span className='text-7xl md:text-[9rem] oldstyle-nums font-extrabold'>5</span>
 						</span>
 						<span className='uppercase flex flex-col font-sans items-start justify-center'>
-							<span className='text-2xl md:text-4xl font-semibold -mb-[0.9rem]'>Years of</span>
-							<span className='text-2xl md:text-4xl font-bold'>Experience</span>
+							<span className='text-2xl md:text-4xl font-semibold -mb-[0.9rem]'>years of</span>
+							<span className='text-2xl md:text-4xl font-bold'>exprience</span>
 						</span>
 					</div>
 					<span className="text-[1.75rem] leading-6 md:leading-8 md:text-[2.5rem] font-medium self-center max-w-full xl:max-w-[50%] mx-auto xl:pt-4">
-						Hello, I am a modal and i have a skill issue and i am among su
+						I've spent years as both a Roblox player and creator. This gives me a core understanding of the platform and its development tools, meaning that I can aide you in maximizing the success of your project in the relatively new territory.
 					</span>
 				</div>
 			</ReactModal>
