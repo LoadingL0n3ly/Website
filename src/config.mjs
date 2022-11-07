@@ -7,10 +7,10 @@ export const SITE = {
 	title: 'l0n3ly',
 	description: 'my little portfolio corner of the internet',
 
-	googleAnalyticsId: false, // or "G-XXXXXXXXXX",
-	googleSiteVerificationId: '',
+	googleAnalyticsId: "G-ETFDE2T5DL", // or "G-XXXXXXXXXX",
+	googleSiteVerificationId: '4156766762',
 };
 
 export const THINGS = {
-	tagline : "Some awesome tagline here thingm maybee",
+	tagline : "I want to help you make your vision come to Roblox",
 }
