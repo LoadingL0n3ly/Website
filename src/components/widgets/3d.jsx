@@ -53,27 +53,16 @@ class ThreeD extends Component {
 								</a>
 							</Card>
 						</SwiperSlide>
+						
+						// Island Map
 						<SwiperSlide>
 							<Card>
-								<a href="https://l0n3ly.com/a">
-									<img className="m-0 p-0 text-[0px] block lg:w-[75%] lg:h-[75%] axl:w-[65%] axl:h-[65%]" src="https://loadingl0n3ly.github.io/nickaloden.png"/>
+								<a href="https://l0n3ly.com/IslandMap">
+									<img className="m-0 p-0 text-[0px] block lg:w-[75%] lg:h-[75%] axl:w-[65%] axl:h-[65%]" src="https://cdn.discordapp.com/attachments/411914549533474826/1067561151208108103/islandMap.png"/>
 								</a>
 							</Card>
 						</SwiperSlide>
-						<SwiperSlide>
-							<Card>
-								<a href="https://l0n3ly.com/a">
-									<img className="m-0 p-0 text-[0px] block lg:w-[75%] lg:h-[75%] axl:w-[65%] axl:h-[65%]" src="https://loadingl0n3ly.github.io/nickaloden.png"/>
-								</a>
-							</Card>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Card>
-								<a href="https://l0n3ly.com/a">
-									<img className="m-0 p-0 text-[0px] block lg:w-[75%] lg:h-[75%] axl:w-[65%] axl:h-[65%]" src="https://loadingl0n3ly.github.io/nickaloden.png"/>
-								</a>
-							</Card>
-						</SwiperSlide>
+						
 					</Swiper>	
 				</div>
 			</section>

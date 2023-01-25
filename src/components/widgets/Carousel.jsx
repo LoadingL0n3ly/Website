@@ -31,11 +31,11 @@ function C() {
 		<SwiperSlide>
 			<div className='bg-[#E2b52b] text-[#731d1d] flex flex-col font-bold justify-center items-center rounded-2xl drop-shadow-2xl w-[85%] py-8 md:py-24 px-10 mx-auto'>      
 				<div className="text-4xl md:text-6xl pb-10">
-					<span className="font-black text-[2.5rem] md:text-[4rem] pr-2 tracking-[0.2rem] ">❝</span>Fedor is a do-it-all kind of guy, he handled texturing, modeling, and general graphic design work for us and got it done in a very timely manner with great quality. Would recommend working with him!
+					<span className="font-black text-[2.5rem] md:text-[4rem] pr-2 tracking-[0.2rem] ">"</span>Fedor is a do-it-all kind of guy, he handled texturing, modeling, and general graphic design work for us and got it done in a very timely manner with great quality. Would recommend working with him!""
 				</div>
 				<div className="flex flex-row text-4xl justify-center items-center">
 					<img src="https://pbs.twimg.com/profile_images/1580557859678556163/TOAFJq-O_400x400.jpg" className="w-24 h-24 rounded-3xl"/>
-					<div className="flex flex-col -mb-8">
+					<div className="flex flex-col text-start">
 						<span className="pl-10">Nate Spell</span>
 						<span className="pl-10 text-2xl">CEO of Barrier Four</span>
 					</div>
@@ -43,6 +43,21 @@ function C() {
 			</div>
 		</SwiperSlide>
 		
+		<SwiperSlide>
+			<div className='bg-[#E2b52b] text-[#731d1d] flex flex-col font-bold justify-center items-center rounded-2xl drop-shadow-2xl w-[85%] py-8 md:py-24 px-10 mx-auto'>      
+				<div className="text-4xl md:text-6xl pb-10">
+					<span className="font-black text-[2.5rem] md:text-[4rem] pr-2 tracking-[0.2rem] ">❝</span> he’s aight’
+				</div>
+				<div className="flex flex-row text-4xl justify-center items-center">
+					<img src="https://pbs.twimg.com/profile_images/1577752253838000128/P4B3XKNa_400x400.jpg" className="w-24 h-24 rounded-3xl"/>
+					<div className="flex flex-col text-start">
+						<span className="pl-10">Evan Zihrsky</span>
+						<span className="pl-10 text-2xl">Gamefam Social Media Guy</span>
+					</div>
+				</div>
+			</div>
+		</SwiperSlide>
+
     </Swiper>
   )
 }

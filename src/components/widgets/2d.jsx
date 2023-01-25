@@ -52,27 +52,7 @@ class TwoD extends Component {
 								</a>
 							</Card>
 						</SwiperSlide>
-						<SwiperSlide>
-							<Card>
-								<a href="https://l0n3ly.com/a">
-									<img className="m-0 p-0 text-[0px] block lg:w-[75%] lg:h-[75%] axl:w-[65%] axl:h-[65%]" src="https://loadingl0n3ly.github.io/nickaloden.png"/>
-								</a>
-							</Card>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Card>
-								<a href="https://l0n3ly.com/a">
-									<img className="m-0 p-0 text-[0px] block lg:w-[75%] lg:h-[75%] axl:w-[65%] axl:h-[65%]" src="https://loadingl0n3ly.github.io/nickaloden.png"/>
-								</a>
-							</Card>
-						</SwiperSlide>
-						<SwiperSlide>
-							<Card>
-								<a href="https://l0n3ly.com/a">
-									<img className="m-0 p-0 text-[0px] block lg:w-[75%] lg:h-[75%] axl:w-[65%] axl:h-[65%]" src="https://loadingl0n3ly.github.io/nickaloden.png"/>
-								</a>
-							</Card>
-						</SwiperSlide>
+						
 					</Swiper>	
 				</div>
 			</section>

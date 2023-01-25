@@ -1,0 +1,59 @@
+---
+import { SITE } from '~/config.mjs';
+import { getCanonical, getHomePermalink } from '~/utils/permalinks';
+import Layout from '~/layouts/PageLayout.astro';
+import { Image, Picture } from '@astrojs/image/components';
+
+import mainImageSrc from '~/assets/images/casestudies/IslandMap/main.png'
+import subImageSrc1 from '~/assets/images/casestudies/a/sub1.jpg'
+import subImageSrc2 from '~/assets/images/casestudies/a/sub2.jpg'
+import subImageSrc3 from '~/assets/images/casestudies/a/sub3.jpg'
+
+
+const caseStudy = {
+	title: "Island Map",
+	subtitle: "July 22nd 2022 - 3D - Texturing",
+	mainImage: {
+		src: mainImageSrc,
+		alt: "C",
+		description: "",
+	},
+
+	bodyText: `lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. `, //use <br/> for line breaks
+	
+	subImages: [ // use 3
+		{
+			src: subImageSrc1,
+			alt: "C",
+		},
+		{
+			src: subImageSrc2,
+			alt: "C",
+		},
+		{
+			src: subImageSrc3,
+			alt: "C",
+		},
+	],
+	bodyText: `lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. `, //use <br/> for line breaks
+}
+const meta = {
+	title: `${caseStudy.title} - ${SITE.name}`,
+	description: SITE.description,
+	canonical: getCanonical(getHomePermalink()),
+};
+---
+<Layout {meta}>
+	<div class="text-center md:pb-16 flex flex-col items-center pt-5">
+		<h1 class="text-6xl sm:text-8xl 2xl:text-9xl 3xl:text-[9rem] 5xl:text-[10rem] 6xl:text-[12rem] font-extrabold uppercase leading-[75%] tracking-[0.0125px]">{caseStudy.title}</h1>
+		<h2 class="text-2xl xl:text-3xl font-bold pb-2">{caseStudy.subtitle}</h2>
+		<Image src={caseStudy.mainImage.src} alt={caseStudy.mainImage.alt} class="w-[75%] md:w-[50%] h-auto rounded-3xl drop-shadow-2xl pb-4"/>
+		<p class="xl:max-w-[35%] text-2xl leading-6 pb-8">{caseStudy.mainImage.description}</p>
+		<div class="flex flex-col md:flex-row gap-y-4 gap-x-12">
+			{caseStudy.subImages.map((image) => (
+				<Image src={image.src} alt={image.alt} class="w-40 h-40 rounded-xl drop-shadow-lg"/>
+			))}
+		</div>
+		<p class="xl:max-w-[45%] text-[1.6rem] leading-6 pt-6 xl:pt-12 pb-4">{caseStudy.bodyText}</p>
+	</div>
+</Layout>
