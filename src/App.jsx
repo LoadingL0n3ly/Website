@@ -1,11 +1,9 @@
-import Buttons from './components/Buttons';
-import Text from './components/Text'
+import Test from './components/Test'
 
 function App() {
   return (
-    <div className="h-screen bg-bg">
-      <Text />
-      <Buttons />
+    <div>
+      <Test />
     </div>
   );
 }
